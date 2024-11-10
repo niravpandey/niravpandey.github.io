@@ -436,30 +436,6 @@ h3{
     font-family: 'Inter';
 }
 
-/* INFO CARD STYLING ================================================== */
-.info-card {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Inter';
-    font-size: 14px;
-    color: #333;
-    text-align: left;
-    z-index: 10;
-}
-
-/* Show info card on hover */
-.hover-card:hover .info-card {
-    display: block;
-}
-
 /* FOOTER=============================================================== */
 footer {
     border-top: 5px solid #2f325e;
