@@ -178,20 +178,24 @@ h3{
     margin-bottom: 10px; /* Adds space below the image */
 }
 /* PLANS AND PRICING==================================================== */
+/* Plans Container */
 .plans-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px;
+    max-width: 100%;
 }
 
+/* Plan Card */
 .plan-card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     padding: 20px;
-    width: 280px;
+    width: 100%;
+    max-width: 340px; /* Ensures cards don't exceed screen width */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     text-align: left;
     display: flex;
@@ -199,6 +203,14 @@ h3{
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Popular Plan Highlight */
+.popular {
+    border: 2px solid #337ea9;
+    background-color: #f7faff;
+}
+
+
 
 .plan-card:hover {
     transform: scale(1.03);
@@ -238,24 +250,6 @@ h3{
     margin-bottom: 8px;
 }
 
-.popular {
-    border: 2px solid #337ea9;
-    background-color: #f7faff;
-}
-
-.popular-label {
-    background-color: #ff8c00;
-    color: #ffffff;
-    font-size: 0.75rem;
-    padding: 4px 8px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 .book-now-container {
     margin-top: 20px;
     text-align: center;
@@ -277,15 +271,16 @@ h3{
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Design */
+@media (min-width: 768px) {
     .plans-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
-
+    
     .plan-card {
-        width: 100%;
-        max-width: 340px;
+        width: 280px; /* Reverts to specific width for larger screens */
     }
 }
 
