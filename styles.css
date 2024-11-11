@@ -178,35 +178,14 @@ h3{
     margin-bottom: 10px; /* Adds space below the image */
 }
 /* PLANS AND PRICING==================================================== */
-/* Pricing Plans Section */
-/* Title Section */
-/* General Layout */
-/* General Layout */
-.plans-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Section Title */
-#plans h2 {
-    text-align: center;
-}
-
-/* Plans Container */
 .plans-container {
     display: flex;
     justify-content: space-around;
-    gap: 25px;
     flex-wrap: wrap;
+    gap: 20px;
     padding: 20px 0;
-    transition: all 0.3s ease-in-out;
 }
 
-/* Plan Card */
 .plan-card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -215,11 +194,10 @@ h3{
     width: 280px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     text-align: left;
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .plan-card:hover {
@@ -227,7 +205,6 @@ h3{
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Card Title */
 .plan-card h3 {
     font-size: 1.25rem;
     color: #2f325e;
@@ -235,7 +212,6 @@ h3{
     font-weight: 700;
 }
 
-/* Price */
 .plan-card .price {
     font-size: 1.5rem;
     color: #337ea9;
@@ -243,7 +219,6 @@ h3{
     margin: 8px 0;
 }
 
-/* Description */
 .plan-card .description {
     font-size: 0.875rem;
     color: #555555;
@@ -251,7 +226,6 @@ h3{
     line-height: 1.4;
 }
 
-/* Feature List */
 .plan-card ul {
     list-style: none;
     padding: 0;
@@ -262,25 +236,10 @@ h3{
     font-size: 0.875rem;
     color: #333333;
     margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease;
 }
 
-.plan-card ul li i {
-    margin-right: 8px;
-    font-size: 1rem;
-    color: #337ea9;
-}
-
-.plan-card ul li:hover {
-    color: #337ea9;
-}
-
-/* Popular Plan Highlight */
 .popular {
     border: 2px solid #337ea9;
-    box-shadow: 0 8px 20px rgba(51, 126, 169, 0.15);
     background-color: #f7faff;
 }
 
@@ -297,7 +256,6 @@ h3{
     text-transform: uppercase;
 }
 
-/* Book Now Button */
 .book-now-container {
     margin-top: 20px;
     text-align: center;
@@ -306,42 +264,16 @@ h3{
 .book-now-button {
     background-color: #337ea9;
     color: #ffffff;
-    font-size: 1rem;
     padding: 10px 25px;
-    margin-bottom: 0px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 5px 10px rgba(51, 126, 169, 0.3);
 }
 
 .book-now-button:hover {
     background-color: #285e7f;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(40, 94, 127, 0.3);
-}
-
-/* Accessibility and Animations */
-.plan-card:focus-within,
-.plan-card:hover {
-    outline: none;
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
-}
-
-.plan-card:focus-within .popular-label {
-    background-color: #d67300;
-}
-
-.plan-card h3,
-.plan-card .price,
-.plan-card ul li {
-    transition: color 0.2s ease;
-}
-
-.book-now-button:focus {
-    outline: 3px solid #285e7f;
-    background-color: #285e7f;
 }
 
 /* Responsive Design */
@@ -354,16 +286,8 @@ h3{
     .plan-card {
         width: 100%;
         max-width: 340px;
-        margin-bottom: 20px;
-    }
-
-    #plans h2 {
-        font-size: 1.75rem;
     }
 }
-
-
-
 
 /* RESPONSIVENESS======================================================= */
 @media (max-width: 768px) {
