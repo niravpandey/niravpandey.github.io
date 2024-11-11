@@ -179,13 +179,16 @@ h3{
 }
 /* PLANS AND PRICING==================================================== */
 /* Plans Container */
+
+/* Plans Container */
 .plans-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 20px;
-    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Plan Card */
@@ -195,19 +198,46 @@ h3{
     border-radius: 12px;
     padding: 20px;
     width: 100%;
-    max-width: 340px; /* Ensures cards don't exceed screen width */
+    max-width: 320px; /* Ensures cards don't exceed mobile screen width */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
 }
 
 /* Popular Plan Highlight */
 .popular {
     border: 2px solid #337ea9;
     background-color: #f7faff;
+}
+
+/* Book Now Button */
+.book-now-button {
+    background-color: #337ea9;
+    color: #ffffff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(51, 126, 169, 0.3);
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .plans-container {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .plan-card {
+        width: 280px; /* Reverts to specific width for larger screens */
+    }
 }
 
 
@@ -255,33 +285,9 @@ h3{
     text-align: center;
 }
 
-.book-now-button {
-    background-color: #337ea9;
-    color: #ffffff;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    box-shadow: 0 5px 10px rgba(51, 126, 169, 0.3);
-}
-
 .book-now-button:hover {
     background-color: #285e7f;
     transform: translateY(-3px);
-}
-
-/* Responsive Design */
-/* Responsive Design */
-@media (min-width: 768px) {
-    .plans-container {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    
-    .plan-card {
-        width: 280px; /* Reverts to specific width for larger screens */
-    }
 }
 
 /* RESPONSIVENESS======================================================= */
