@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional tutoring services by Nirav Pandey. Specializing in VCE subjects, test preparation, and coding.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Nirav Pandey</title>
+    <!--
+        Written by Nirav Pandey, November 13, 2024
+        This is the Course List page for the website
+    -->
+</head>
+
+<!-- Body Section -->
+<body>
+    <nav class = "navbar">
+        <a href="index.html"><div class = "logo">Nirav Pandey</div></a>
+        <ul class = "nav-links">
+        <a href="index.html">Home</a>
+        <a href="reg.html">Classes</a>
+        <a href="about-me.html">About</a>
+        </ul>
+        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+        <a href="index.html">Home</a>
+        <a href="reg.html">Classes</a>
+        <a href="about-me.html">About</a>
+    </div>
+
+    <!-- Class Listing -->
+    <section id="classes">
+        <h2>Browse Classes &#128269;</h2>
+
+        <h3>Test Preparation Courses</h3>
+        <div class="gallery">
+            <div>
+                <img src="assets/images/ieltslogo.png" alt="IELTS">
+                <div class="caption-name">IELTS</div>
+            </div>
+            <div>
+                <img src="assets/images/ptelogo.png" alt="PTE">
+                <div class="caption-name">PTE</div>
+            </div>
+            <div>
+                <img src="assets/images/satlogo.png" alt="SAT">
+                <div class="caption-name">SAT</div>
+            </div>
+            <div>
+                <img src="assets/images/toefllogo.png" alt="TOEFL">
+                <div class="caption-name">TOEFL</div>
+            </div>
+        </div>
+
+        <h3>Tutoring + Extracurriculars</h3>
+        <div class="gallery">
+            <div>
+                <img src="assets/images/triangular_ruler.png" alt="MATH">
+                <div class="caption-name">Maths</div>
+            </div>
+            <div>
+                <img src="assets/images/telescope.png" alt="VCE">
+                <div class="caption-name">Physics</div>
+            </div>
+            <div>
+                <img src="assets/images/piano.png" alt="PIANO">
+                <div class="caption-name">Piano</div>
+            </div>
+            <div>
+                <img src="assets/images/computer.png" alt="COMPUTER">
+                <div class="caption-name">Coding</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans -->
+    <section id="plans">
+        <h2 class="center">Choose a Tutoring Plan That Fits</h2>
+        <div class="plans-container">
+
+            <!-- Group Course -->
+            <div class="plan-card popular">
+                <h3>Group Course</h3>
+                <p class="price">$400 <span>for 4 weeks</span></p>
+                <p class="description">Ideal for interactive learners who enjoy group dynamics at a budget-friendly rate. Includes <strong>16 one-hour sessions</strong> over 4 weeks.</p>
+                <ul>
+                    <li>👥 Small group (3-5 students)</li>
+                    <li>📅 16 structured sessions</li>
+                    <li>💸 Affordable, collaborative learning</li>
+                    <li>🔖 Refer a friend and earn up to $50 in discounts!</li>
+                </ul>
+                <div class="book-now-container">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdibTkX_8uZ4TPdbt5w2YEHhOw9QSa03pkt-Y2wzr12hsr1cg/viewform?usp=pp_url&entry.1471560866=Online+Group+Course+(4+weeks)" class="book-now-button" target="_blank">Book Now</a>
+                </div>
+            </div>
+            
+            <!-- Individual Course -->
+            <div class="plan-card">
+                <h3>Individual Course</h3>
+                <p class="price">$560 <span>for 4 weeks</span></p>
+                <p class="description">Perfect for those seeking personalized support. Includes <strong>16 one-hour sessions</strong> with flexible scheduling options.</p>
+                <ul>
+                    <li>🎯 Personalized attention</li>
+                    <li>🕒 Flexible scheduling to suit your needs</li>
+                    <li>📈 Regular progress tracking </li>
+                    <li>🔖 Refer a friend and save up to $50 on discounts!</li>
+                </ul>
+                <div class="book-now-container">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdibTkX_8uZ4TPdbt5w2YEHhOw9QSa03pkt-Y2wzr12hsr1cg/viewform?usp=pp_url&entry.1471560866=Online+Individual+Course+(4+weeks)" class="book-now-button" target="_blank">Book Now</a>
+                </div>
+            </div>
+        
+            <!-- Online Sessions -->
+            <div class="plan-card">
+                <h3>Online Sessions (1 hr)</h3>
+                <p class="price">$40 <span>/hr</span></p>
+                <p class="description">Flexible, remote learning option for long-term improvement. <strong>Bulk discounts available</strong> for booking multiple sessions.</p>
+                <ul>
+                    <li>✅ Weekly progress checks</li>
+                    <li>🕒 Flexible session timing</li>
+                    <li>📘 Additional practice resources</li>
+                    <li>💵 Book 10 hours and get 10% off!</li>
+                </ul>
+                <div class="book-now-container">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdibTkX_8uZ4TPdbt5w2YEHhOw9QSa03pkt-Y2wzr12hsr1cg/viewform?usp=pp_url&entry.1471560866=Online+Sessions+(1+hr)" class="book-now-button" target="_blank">Book Now</a>
+                </div>
+            </div>
+        
+            <!-- In-Person Tutoring -->
+            <div class="plan-card">
+                <h3>In-Person Tutoring (1 hr)</h3>
+                <p class="price">$60 <span>/hr</span></p>
+                <p class="description">Receive direct, in-person guidance for a fully immersive experience that keeps you focused and screen-free, perfect for hands-on learning.</p>
+                <ul>
+                    <li>🕰️ Flexible hours</li>
+                    <li>🤓 Hands-on, face-to-face support</li>
+                    <li>🚀 Ideal for complex topics</li>
+                    <li>🔖 First session free for new students!</li>
+                </ul>
+                <div class="book-now-container">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdibTkX_8uZ4TPdbt5w2YEHhOw9QSa03pkt-Y2wzr12hsr1cg/viewform?usp=pp_url&entry.1471560866=In-person+Sessions+(1+hr)" class="book-now-button" target="_blank">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Referrals -->
+    <section id="referral-highlight">
+        <div class="referral-container">
+            <h2>🌟 Refer and Save!</h2>
+            <p>Invite friends to our tutoring sessions and enjoy exclusive discounts. It’s simple:</p>
+            <ul>
+                <li>💸 Get $25 off when you bring a friend, $50 when you bring two!</li>
+                <li>📉 Your friends also receives $15 off their first booking</li>
+                <li>🎉 Maximum savings of $50 with just 2 referrals!</li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-footer">
+          <a href="https://www.facebook.com/profile.php?id=100087075913883" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/p/niravpandey_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/niravpandey05" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@niravpandey4191" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="footxt">&copy; Nirav Pandey. 2024.</p>
+        <p class="footxt">Source Code at <a href="https://github.com/niravpandey" style="color:white">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
