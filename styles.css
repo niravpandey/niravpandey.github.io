@@ -44,8 +44,9 @@ nav a:hover {
     color: #FFFFFF;
 }
 .logo{
-    font-size: 1.5rem;
-    font-weight: 500;
+    width: 37px;
+    height:auto;
+    border-radius: 8px;
 }
 .nav-links {
     list-style: none;
@@ -353,7 +354,7 @@ h3 {
     transition: transform 0.3s ease;
 }
 .gallery img:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 .caption-name {
     text-align: center;
