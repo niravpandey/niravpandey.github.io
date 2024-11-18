@@ -43,12 +43,7 @@ nav a:hover {
     padding: 0 20px;
     color: #FFFFFF;
 }
-.logoimg{
-    width: 37px;
-    height:auto;
-    margin-top:5px;
-    border-radius: 8px;
-}
+
 .nav-links {
     list-style: none;
     display: flex;
