@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Nirav Pandey - Blog">
+    <meta property="og:description" content="Nirav's Blog on VCE, Test Preparation, Coding, and more.">
+    <meta property="og:image" content="https://github.com/niravpandey/niravpandey.github.io/blob/main/assets/images/fb-image.png">
+    <meta property="og:url" content="https://niravpandey.github.io/">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Nirav Pandey - Blog</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img src="assets/images/favicon.png" width="37px" alt="logo"></a>
+        <ul class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="reg.html">Classes</a>
+            <a href="about-me.html">About</a>
+            <a href="blog.html" class="active">Blog</a>
+        </ul>
+        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+        <a href="index.html">Home</a>
+        <a href="reg.html">Classes</a>
+        <a href="about-me.html">About</a>
+        <a href="blog.html">Blog</a>
+    </div>
+
+    <section class="blog-main">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-container">
+            <!-- Blog Post Example -->
+            <article class="blog-post">
+                <h3><a href="post1.html">How to Excel in VCE: A Comprehensive Guide</a></h3>
+                <p class="post-meta">Posted on January 15, 2024 by Nirav Pandey</p>
+                <img src="assets/images/vce.jpg" alt="VCE Preparation">
+                <p class="post-excerpt">Learn the strategies and tips that will help you succeed in your VCE exams. From time management to subject focus, this guide covers it all...</p>
+                <a href="post1.html" class="read-more">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <h3><a href="post2.html">Why Coding is Essential for Future Careers</a></h3>
+                <p class="post-meta">Posted on February 5, 2024 by Nirav Pandey</p>
+                <img src="assets/images/coding.jpg" alt="Coding Importance">
+                <p class="post-excerpt">As the world moves towards a digital future, coding is becoming an essential skill. Learn how learning to code can help you excel in any field...</p>
+                <a href="post2.html" class="read-more">Read More</a>
+            </article>
+        </div>
+        
+        <!-- Sidebar for categories, popular posts, etc. -->
+        <div class="sidebar-widget">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">VCE Tips</a></li>
+                <li><a href="#">Coding Tutorials</a></li>
+                <li><a href="#">Test Preparation</a></li>
+                <li><a href="#">Extracurriculars</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-footer">
+            <a href="https://www.facebook.com/profile.php?id=100087075913883" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/p/niravpandey_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/niravpandey05" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@niravpandey4191" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="footxt">&copy; Nirav Pandey. 2024.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
