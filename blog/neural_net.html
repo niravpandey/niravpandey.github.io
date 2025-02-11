@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Understanding Neural Networks - Nirav Pandey">
+    <meta property="og:description" content="A deep dive into neural networks, their architecture, and how they are used in machine learning.">
+    <meta property="og:image" content="https://github.com/niravpandey/niravpandey.github.io/blob/main/assets/images/fb-image.png">
+    <meta property="og:url" content="https://niravpandey.github.io/neural-net-blog">
+    <meta property="og:type" content="article">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/Users/niravpandey/Desktop/website/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Understanding Neural Networks - Nirav Pandey</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img src="assets/images/favicon.png" width="37px" alt="logo"></a>
+        <ul class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="reg.html">Classes</a>
+            <a href="about-me.html">About</a>
+            <a href="blog.html">Blog</a>
+        </ul>
+        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="close-btn" onclick="toggleSidebar()">×</a>
+        <a href="index.html">Home</a>
+        <a href="reg.html">Classes</a>
+        <a href="about-me.html">About</a>
+        <a href="blog.html">Blog</a>
+    </div>
+
+    <!-- Blog Post Content Section -->
+    <section class="blog-post-main">
+        <article class="blog-post">
+            <h2>Understanding Neural Networks</h2>
+            <p class="post-meta">Posted on February 10, 2024 by Nirav Pandey</p>
+            
+            <!-- Blog Image -->
+            <img src="assets/images/neural-network.png" alt="Neural Network" class="blog-image">
+
+            <p>Neural Networks (NN) are a fundamental concept in machine learning, inspired by the biological neural networks in human brains. They are designed to recognize patterns in data and make decisions based on those patterns. This post provides an overview of neural networks, their architecture, and their applications.</p>
+
+            <h3>What is a Neural Network?</h3>
+            <p>A Neural Network is a series of algorithms that attempt to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. It consists of layers of nodes, each connected to the next layer by weights that control how much influence one node has on the other.</p>
+
+            <h3>Basic Architecture</h3>
+            <p>The architecture of a neural network consists of three main types of layers:</p>
+            <ul>
+                <li><strong>Input Layer:</strong> The first layer that receives the input data.</li>
+                <li><strong>Hidden Layer:</strong> These layers perform computations and feature extraction from the input data.</li>
+                <li><strong>Output Layer:</strong> This layer gives the final result or prediction.</li>
+            </ul>
+
+            <h3>Example of a Simple Neural Network</h3>
+            <pre><code>import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+model = Sequential([
+    Dense(64, activation='relu', input_shape=(784,)),
+    Dense(10, activation='softmax')
+])
+
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])</code></pre>
+            <p>This code demonstrates the creation of a simple neural network using TensorFlow's Keras API. It has an input layer of size 784 (for an image input), one hidden layer, and an output layer with 10 neurons (for 10 classes in a classification problem).</p>
+
+            <h3>Applications of Neural Networks</h3>
+            <p>Neural networks have a wide range of applications, such as:</p>
+            <ul>
+                <li>Image Recognition</li>
+                <li>Natural Language Processing (NLP)</li>
+                <li>Game AI and autonomous systems</li>
+                <li>Medical Diagnosis</li>
+                <li>Stock Market Prediction</li>
+            </ul>
+
+            <p>These applications demonstrate how powerful neural networks can be in handling complex tasks that involve unstructured data like images, text, and audio.</p>
+            
+            <a href="https://www.tensorflow.org" class="read-more">Learn More about Neural Networks</a>
+        </article>
+    </section>
+
+    <footer>
+        <div class="social-footer">
+            <a href="https://www.facebook.com/profile.php?id=100087075913883" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/p/niravpandey_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/niravpandey05" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@niravpandey4191" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="footxt">&copy; Nirav Pandey. 2024.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
