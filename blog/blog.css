@@ -1,92 +1,65 @@
-/* ***************************** blog.css **************************** */
+/* BLOG POST CONTAINER */
+.blog-post {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
 
-/* Blog Main Section */
-.blog-main {
-    padding: 40px;
-    background-color: #f9f9f9;
+.blog-post:hover {
+    transform: translateY(-2px);
+}
+
+/* IMAGE SECTION */
+.blog-post img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+/* TEXT SECTION */
+.blog-content {
+    flex-grow: 1;
+}
+
+.blog-content h2 {
+    font-size: 20px;
+    margin: 0;
     color: #333;
 }
 
-.blog-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+.blog-meta {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
 }
 
-.blog-post {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* DESCRIPTION & LINK */
+.blog-content p {
+    font-size: 14px;
+    color: #444;
+    margin: 5px 0;
+}
+
+.blog-link {
+    color: #2f325e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-link:hover {
+    text-decoration: underline;
 }
 
 .blog-post img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.blog-post h3 {
-    font-size: 24px;
-    color: #337ea9;
-    margin-bottom: 10px;
-}
-
-.blog-post a {
-    color: #337ea9;
-    text-decoration: none;
-}
-
-.blog-post .read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #337ea9;
-    font-weight: bold;
-    text-decoration: none;
-    border: 1px solid #337ea9;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.blog-post .read-more:hover {
-    background-color: #337ea9;
-    color: white;
-}
-
-.sidebar-widget {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-}
-
-.sidebar-widget h3 {
-    margin-bottom: 10px;
-    font-size: 22px;
-    color: #337ea9;
-}
-
-.sidebar-widget ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar-widget ul li {
-    margin: 10px 0;
-}
-
-.sidebar-widget ul li a {
-    text-decoration: none;
-    color: #337ea9;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.sidebar-widget ul li a:hover {
-    color: #ff5722;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Same as width for a square */
+    object-fit: cover; /* Ensures the image fills the square */
+    border-radius: 8px; /* Optional: rounded corners */
 }

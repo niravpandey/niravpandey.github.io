@@ -1,6 +1,8 @@
 /* ***************************** styles.css **************************** */
 /*                                                                       */
 /* BODY================================================================= */
+/* Ensure consistent text size across the entire website */
+
 body {
     font-family: 'Inter', sans-serif !important;
     font-size: 16px;
@@ -33,6 +35,7 @@ nav a:hover {
     text-shadow: 0 0 25px rgba(224, 247, 250, 0.8);
     transform: scale(1.05);
 }
+
 
 .navbar {
     
@@ -109,13 +112,35 @@ h3 {
 }
 
 .p-link {
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration: none;
+    color: #2f325e; /* A slightly lighter, more distinct shade of blue */
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease; /* Smooth color transition */
+    
 }
 
+
 .p-link:hover {
-    color:#337ea9;
+    color: #337ea9; /* Lighter blue for better contrast */
 }
+
+/* Subtle underline animation */
+.p-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; /* Keeps underline closer to text */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #337ea9; /* Matches hover color */
+    transition: width 0.3s ease; /* Smooth underline growth */
+}
+
+.p-link:hover::after {
+    width: 100%; /* Expands underline on hover */
+}
+
 
 /* SIDEBAR============================================================== */
 .sidebar {
@@ -324,15 +349,26 @@ h3 {
     background-color: #337ea9;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
     margin-top: 20px;
     font-size: 18px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    border-color: #2f325e; /* Dark blue border */
+    border-width: 3px; /* Thin border */
+    border-style: solid; /* Ensure the border is solid */
 }
+
 .button:hover {
-    background-color: #337ea9;
-    transform: scale(1.04);
+    background-color: #2f325e;
+    transform: scale(1.05); /* Slightly scale up the button */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
 }
+
+.button:active {
+    transform: scale(1); /* Reset scale when clicked */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow on click */
+}
+
 /* GALLERY============================================================== */
 .gallery {
     display: flex;
