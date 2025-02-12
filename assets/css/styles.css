@@ -42,9 +42,14 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #337ea9;
+    background: linear-gradient(90deg,#2f325e,#337ea9);
+
+
     padding: 0 20px;
     color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-links {
@@ -148,7 +153,7 @@ h3 {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1001;
     top: 0;
     right: 0;
     background-color: #13023f;
@@ -186,7 +191,7 @@ h3 {
 .headshot {
     float: left; 
     border-radius: 15px; 
-    border: 3px solid #335aa9; 
+    border: 3px solid #2f325e; 
     width: 175px; 
     height: auto; 
     margin-right: 30px; 
@@ -196,7 +201,7 @@ h3 {
 .headshotidx{
     float: right; 
     border-radius: 15px; 
-    border: 3px solid #335aa9; 
+    border: 3px solid #2f325e; 
     width: 175px; 
     height: auto; 
     margin-left: 30px; 
@@ -251,12 +256,10 @@ h3 {
 
 .button:hover {
     background-color: #2f325e;
-    transform: scale(1.05); /* Slightly scale up the button */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
 }
 
 .button:active {
-    transform: scale(1); /* Reset scale when clicked */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow on click */
 }
 
