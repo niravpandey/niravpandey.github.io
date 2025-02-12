@@ -35,6 +35,11 @@ nav a:hover {
     text-shadow: 0 0 25px rgba(224, 247, 250, 0.8);
     transform: scale(1.05);
 }
+nav a img {
+    height: 35px; /* Adjust as needed */
+    width: auto;  /* Keeps the aspect ratio */
+    align-self: center; /* Centers the image vertically */
+}
 
 
 .navbar {
