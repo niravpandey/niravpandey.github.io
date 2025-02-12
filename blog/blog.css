@@ -64,3 +64,38 @@
     border-radius: 8px; /* Optional: rounded corners */
 }
 
+/* General styles for images in the blog */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* For images that need to be aligned to the left with a fixed width */
+.left-image {
+    width: 200px;  /* Set fixed width */
+    float: left;    /* Make the image float to the left */
+    margin-right: 15px;  /* Space between image and text */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* For images that need to be aligned to the right with a fixed width */
+.right-image {
+    width: 200px;  /* Set fixed width */
+    float: right;   /* Make the image float to the right */
+    margin-left: 15px;   /* Space between image and text */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Optionally, you can clear the floats if needed */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+p.date{
+    font-size:medium;
+    line-height: 5px;
+    color:#5b5b5b;
+    font-style: italic;
+}
