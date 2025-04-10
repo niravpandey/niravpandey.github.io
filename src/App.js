@@ -1,13 +1,11 @@
-import Sidebar from './components/Sidebar';
+import './App.css';
+import Accordion from './components/sidebar';
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <div style={{ marginLeft: '220px', padding: '20px' }}>
-        <h1>Welcome to Nirav's Site</h1>
-        <p>Start building your content here...</p>
-      </div>
+      {/*Accordion */}
+      <Accordion />
     </div>
   );
 }
