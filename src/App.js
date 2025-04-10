@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default Sidebar;
+export default App;
