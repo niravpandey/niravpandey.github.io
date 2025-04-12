@@ -10,7 +10,7 @@ const Home = () => {
         image="/icons/cip.jpeg"
         title="Section Leader"
         name="Stanford University: Code in Place"
-        description="Taught a part of Stanford's CS106A, a course on programming fundamentals with Python sharpening leadership, presentation and coding skills on the way."
+        description="Taught a part of Stanford's CS106A, a course on programming fundamentals with Python."
         time="Apr 2025 - Present"
       />
       <TimelineItem
