@@ -1,28 +1,75 @@
 body {
     font-family: 'Space Grotesk';
-    display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    background-color: rgb(0, 0, 0);
+    background-color:#fff;
 }
-.wrapper {
-    background: linear-gradient(#15232c,#1a0324);
-    color: #ffffff;
-    width: 300px;
-    border: solid 1px #578ab7;
-    border-radius: 15px;
-    padding: 5px 25px 20px 25px;
-    box-shadow: 0 0 10px rgba(87, 148, 183, 0.6); 
-    
-    margin: 10px;
+/* Container for the sidebar */
+.title {
+  font-family: 'Genos';
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
 }
-
-.question{
-    border-radius: 8px;
-    border: 1px #4a3e86 solid;
-    padding:10px;
-    transition: 0.4s box-shadow ease;
-}
-.question:hover{
-    box-shadow: 0 0 10px rgba(87, 167, 183, 0.5); 
-}
+.sidebar {    
+    position: fixed;
+    width: 250px; /* Set the width of the sidebar */
+    height: 100vh; /* Full height of the screen */
+    background: linear-gradient(#fff,#c6e8ee77);
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #9fb1b8;
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  /* Individual item styling */
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #acbec5;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Hover effect for better interaction */
+  .sidebar-item:hover {
+    background-color: #acd2d63a;
+  }
+  
+  /* Image styling within the sidebar items */
+  .sidebar-item-image {
+    margin-right: 10px;
+    width: 24px;
+    height: auto;
+  }
+  .sidebar-item-image {
+    margin-right: 10px;
+    width: 24px;
+    height: auto;
+  }
+  
+  /* Title styling */
+  .sidebar-item-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .social-bar {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon img {
+    width: 25px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icon:hover img {
+    opacity: 0.7;
+  }

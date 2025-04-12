@@ -1,0 +1,41 @@
+h1{
+    margin: 0px;
+    font-size: 35px;
+}
+p{
+    margin:0px;
+}
+.container {
+    margin:0px;
+    padding: 25px 0 25px 25px;
+    border-bottom: 1px solid #9fb1b8;
+}
+.image{
+    border-radius: 15px;
+    margin-top: 25px;
+    width:200px;
+    border: dashed 3px #000f67;
+    transition: border ease 0.3s;
+}
+.image:hover{
+    border-radius: 15px;
+    margin-top: 25px;
+    width:200px;
+    border: 3px dotted #949bc4;
+}
+.name{
+    color:#000b72;
+    transition: ease color 0.3s;
+}
+.highlight{
+    color:#000b72;
+    text-decoration: #000b72 underline 2px ;
+}
+.highlight:hover{
+    text-decoration: none ;
+    stroke-width: 0px;
+}
+
+.name:hover{
+    color:#000B34;
+}
